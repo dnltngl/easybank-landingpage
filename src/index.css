@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --blue-dark: #2d314d;
+    --gray-light: #9698A6;
+  }
+}
+
 body {
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
 }
