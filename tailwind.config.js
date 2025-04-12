@@ -13,6 +13,9 @@ export default {
         "card-title-foreground": "var(--blue-dark)",
         "card-description-foreground": "var(--gray-light)",
       },
+      screens: {
+        xs: "500px", 
+      },
     },
   },
   plugins: [],
