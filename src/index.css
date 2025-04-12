@@ -5,13 +5,26 @@
 @layer base {
   :root {
     --blue-dark: #2d314d;
-    --gray-light: #9698A6;
-    --green: #31D35C;
-    --teal: #2BB7DB;
+    --gray-light: #9698a6;
+    --green: #31d35c;
+    --teal: #2bb7db;
   }
 }
 
 body {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+.fb-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min(100% - 40px, 69.375rem) 1fr;
+}
+
+.fb-wrapper > * {
+  grid-column: 2;
+
+  @media (max-width: 768px) {
+    grid-column: 1/-1;
+  }
 }
